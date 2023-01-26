@@ -9,7 +9,7 @@ public class ToBeDeletedController {
     public int giveMeNumber(int a){
         int base = 100;
 
-        return base * a;
+        return base * a + 34;
     }
     @GetMapping("/say")
     public String sayHello(){

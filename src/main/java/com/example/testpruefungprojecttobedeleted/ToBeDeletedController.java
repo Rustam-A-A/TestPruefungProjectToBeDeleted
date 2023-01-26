@@ -6,7 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ToBeDeletedController {
     @GetMapping("/parameter")
-    public int sayHello(){
-        return 10;
+    public int giveMeNumber(int a){
+        int base = 100;
+
+        return base * a;
+    }
+    @GetMapping("/say")
+    public String sayHello(){
+        return "Hello";
     }
 }
